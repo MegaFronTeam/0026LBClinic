@@ -1,0 +1,60 @@
+mixin product-item(i, t)
+	+b.product-item(href="#").mono
+		+e.img-wrap
+			//- если надо картинку по центру  вывести использовать обертку .img-wrap-center  - если нет- убираем
+			.img-wrap-center 
+				+img(`img/prod-${i}.png`) 
+		+e.text Уход за лицом
+		+e.title.ttu!= t
+		+e.price.ttu 5 000 руб
+	// /.product-item
+
+mixin sCatalog(data)
+	// start sCatalog
+	+b.sCatalog.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Наша продукция
+				p Клиника с&nbsp;медицинской лицензией, новейшим оборудованием, высококвалифицированным персоналом и&nbsp;сертифицированными препаратами
+			+e.row.row
+				- const wrapClass="col-lg-4 col-md-6"
+				+e.col(class= wrapClass)
+					+product-item(`1`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`2`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`3`,`Маска  `,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`4`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`5`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`6`,`Маска с активными пептидами`,``,``) 
+			+e.btn.btn.btn-dark(href="#"): span  Смотреть все товары
+	// end sCatalog
+
+
+mixin sCatalog10-2(data)
+	// start sCatalog
+	+b.sCatalog.section&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Новинки
+			+e.row.row
+				- const wrapClass="col-lg-4 col-md-6"
+				+e.col(class= wrapClass)
+					+product-item(`1`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`2`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`3`,`Маска  `,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`4`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`5`,`Маска с активными пептидами`,``,``) 
+				+e.col(class= wrapClass)
+					+product-item(`6`,`Маска с активными пептидами`,``,``) 
+			+e.btn.btn.btn-dark(href="#"): span  Смотреть все товары
+	// end sCatalog
+
+	

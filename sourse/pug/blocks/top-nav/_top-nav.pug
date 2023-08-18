@@ -1,0 +1,47 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js&attributes(attributes)
+		span
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+mnu()
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row
+				.col.ps-0.d-none.d-lg-block
+					ul
+						li: a(href="#")  Услуги
+						li: a(href="#")  Цены
+						li: a(href="#")  Клиника
+				+e.logo-col.col
+					a(href="#") 
+						img(src="img/logo.svg", alt="")
+				.col-auto.align-self-center.d-none.d-sm-block
+					+e.link(href="tel:8800333-0-600") 8 800 333-0-600
+				.col-auto.align-self-center.d-none.d-sm-block
+					+e.link(href="#") Контакты
+				.col-auto.d-none.d-xl-block
+					+e.btn.btn.btn-dark(href="#") Записаться
+				.col-auto.pe-0.order-xl-first
+					+menu-toggle()
+				//- .col.order-lg-0.order-last
+				//- 	.menu-mobile.menu-mobile--js
+				//- 		.menu-mobile__inner
+				//- 			//- +menu-toggle()
+				//- 			+mnu()
+					
+	// end top-nav

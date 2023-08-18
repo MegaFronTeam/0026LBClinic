@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+		<link href="libs/@splidejs/splide/css/splide.min.css" rel="stylesheet">
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet">
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock" id="headerBlock">
+					<div class="headerBlock__slider headerBlock__slider--js splide">
+						<div class="slider-control">
+							<div class="splide__arrows splide__arrows--ltr">
+								<button class="splide__arrow splide__arrow--prev" type="button" aria-controls="splide01-track" aria-label="Previous slide">
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</button>
+								<button class="splide__arrow splide__arrow--next" type="button" aria-controls="splide01-track" aria-label="Next slide">
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+							<ul class="splide__pagination"></ul>
+						</div>
+						<div class="splide__track">
+							<div class="splide__list">
+								<div class="splide__slide">
+									<div class="container section">
+										<div class="headerBlock__label mono">Акция
+										</div>
+										<div class="h1">Эндосфера терапия &mdash;&nbsp;Скидка&nbsp;15%</div>
+										<div class="headerBlock__btns">
+											<a class="headerBlock__btn btn btn-dark" href="#"><span>Записаться</span>
+											</a>
+											<a class="headerBlock__btn btn btn-link" href="#"><span>Подробнее</span>
+											</a>
+										</div>
+										<div class="headerBlock__img-wrap"><img class="end" src="img/head-img.png" alt="" loading="lazy">
+										</div>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="container section">
+										<div class="headerBlock__label mono">Акция
+										</div>
+										<div class="h1">Эндосфера терапия &mdash;&nbsp;Скидка&nbsp;15%</div>
+										<div class="headerBlock__btns">
+											<a class="headerBlock__btn btn btn-dark" href="#"><span>Записаться</span>
+											</a>
+											<a class="headerBlock__btn btn btn-link" href="#"><span>Подробнее</span>
+											</a>
+										</div>
+										<div class="headerBlock__img-wrap"><img class="end" src="img/head-img.png" alt="" loading="lazy">
+										</div>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="container section">
+										<div class="headerBlock__label mono">Акция
+										</div>
+										<div class="h1">Эндосфера терапия &mdash;&nbsp;Скидка&nbsp;15%</div>
+										<div class="headerBlock__btns">
+											<a class="headerBlock__btn btn btn-dark" href="#"><span>Записаться</span>
+											</a>
+											<a class="headerBlock__btn btn btn-link" href="#"><span>Подробнее</span>
+											</a>
+										</div>
+										<div class="headerBlock__img-wrap"><img class="end" src="img/head-img.png" alt="" loading="lazy">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<!-- start sServises-->
+				<div class="sServises" id="sServises">
+					<div class="container">
+						<div class="sServises__row row">
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Процедуры омоложения
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-1.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Коррекция фигуры
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Косметология и&nbsp;уход
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-3.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Ногтевой сервис
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-4.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Массаж
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-5.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Эпиляция
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-6.png" alt="" loading="lazy">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sServises-->
+				<!-- start sAbout-->
+				<section class="sAbout section pt-0" id="sAbout">
+					<div class="sAbout__head">
+						<div class="container section">
+							<div class="section-label">О клинике</div>
+							<div class="section-title">
+								<div class="row">
+									<div class="col-lg-6">
+										<h2>Симбиоз пластической хирургии&nbsp;и косметологии</h2>
+									</div>
+									<div class="section-title__col col-lg-6">
+										<p>Клиника с&nbsp;медицинской лицензией, новейшим оборудованием, высококвалифицированным персоналом и&nbsp;сертифицированными препаратами<a class="tdu ttu mono" href="#">Подробнее</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="sAbout__img-wrap"><img class="res-i" src="img/about-img.png" alt="" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="container-xl">
+						<div class="sAbout__row row g-0">
+							<div class="sAbout__item col-md-6 mono"><img src="img/about-img-1.png" alt="" loading="lazy">
+								<div class="sAbout__title">Оборудование
+								</div>
+								<a class="sAbout__link" href="#">Подробнее
+								</a>
+							</div>
+							<div class="sAbout__item col-md-6 mono"><img src="img/about-img-2.png" alt="" loading="lazy">
+								<div class="sAbout__title">специалисты
+								</div>
+								<a class="sAbout__link" href="#">Подробнее
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAbout-->
+				<!-- start sCatalog-->
+				<div class="sCatalog section">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>Наша продукция</h2>
+							<p>Клиника с&nbsp;медицинской лицензией, новейшим оборудованием, высококвалифицированным персоналом и&nbsp;сертифицированными препаратами</p>
+						</div>
+						<div class="sCatalog__row row">
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-1.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска с активными пептидами
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-2.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска с активными пептидами
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-3.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска  
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-4.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска с активными пептидами
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-5.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска с активными пептидами
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-lg-4 col-md-6">
+								<a class="product-item mono" href="#">
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-6.png" alt="" loading="lazy">
+										</div>
+									</div>
+									<div class="product-item__text">Уход за лицом
+									</div>
+									<div class="product-item__title ttu">Маска с активными пептидами
+									</div>
+									<div class="product-item__price ttu">5 000 руб
+									</div>
+								</a>
+								<!-- /.product-item-->
+							</div>
+						</div>
+						<a class="sCatalog__btn btn btn-dark" href="#"><span> Смотреть все товары</span>
+						</a>
+					</div>
+				</div>
+				<!-- end sCatalog-->
+				<!-- start sRews-->
+				<section class="sRews section" id="sRews">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>Отзывы</h2>
+						</div>
+						<div class="sRews__slider sRews__slider--js splide">
+							<div class="slider-control">
+								<div class="splide__arrows splide__arrows--ltr">
+									<button class="splide__arrow splide__arrow--prev" type="button" aria-controls="splide01-track" aria-label="Previous slide">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+									<button class="splide__arrow splide__arrow--next" type="button" aria-controls="splide01-track" aria-label="Next slide">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
+								<ul class="splide__pagination"></ul>
+							</div>
+							<div class="splide__track">
+								<div class="splide__list">
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sRews-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/@splidejs/splide/js/splide.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

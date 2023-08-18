@@ -1,0 +1,18 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock#headerBlock&attributes(attributes)
+		+e.slider--js.splide
+			+control()
+			.splide__track
+				.splide__list
+					- for (var x = 0; x < 3; x++)
+						.splide__slide
+							.container.section
+								+e.label.mono Акция
+								.h1 Эндосфера терапия &mdash;&nbsp;Скидка&nbsp;15%
+								+e.btns
+									+e.btn.btn.btn-dark(href="#"): span Записаться
+									+e.btn.btn.btn-link(href="#"): span Подробнее
+								+e.img-wrap
+									+img('img/head-img.png').end
+	// end headerBlock

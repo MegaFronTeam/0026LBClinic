@@ -1,0 +1,25 @@
+mixin sAbout(data)
+	// start sAbout
+	+b.SECTION.sAbout#sAbout.section.pt-0&attributes(attributes)
+		+e.head
+			.container.section
+				.section-label О клинике
+				+b.section-title
+					.row
+						.col-lg-6
+							h2 Симбиоз пластической хирургии&nbsp;и косметологии
+						+e.col.col-lg-6
+							p Клиника с&nbsp;медицинской лицензией, новейшим оборудованием, высококвалифицированным персоналом и&nbsp;сертифицированными препаратами
+								a.tdu.ttu(href="#").mono Подробнее
+				+e.img-wrap
+					+img("img/about-img.png").res-i
+		.container-xl
+			+e.row.row.g-0
+				mixin item(i,t)
+					+e.item.col-md-6.mono
+						+img(`img/about-img-${i}.png`)
+						+e.title= t
+						+e.link(href="#") Подробнее
+				+item(`1`,`Оборудование`)
+				+item(`2`,`специалисты`)
+	// end sAbout

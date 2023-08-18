@@ -1,0 +1,39 @@
+@use "sass:math";
+
+.iconC {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.iconC-developer {
+	$h: 24;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(24 / #{$h} *1em );
+}
+.iconC-odnoklassniki {
+	$h: 44;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(44 / #{$h} *1em );
+}
+.iconC-telegram {
+	$h: 44;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(44 / #{$h} *1em );
+}
+.iconC-viber {
+	$h: 44;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(44 / #{$h} *1em );
+}
+.iconC-vkontakte {
+	$h: 44;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(44 / #{$h} *1em );
+}
+.iconC-whatsapp {
+	$h: 44;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(44 / #{$h} *1em );
+}

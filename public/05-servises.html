@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Услуги</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+		<link href="libs/@splidejs/splide/css/splide.min.css" rel="stylesheet">
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet">
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Услуги</span>
+										<meta itemprop="position" content="2"></a></li>
+							</ol>
+						</nav>
+						<h1>Услуги</h1>
+					</div>
+				</div>
+				<!-- start sServises-->
+				<div class="sServises" id="sServises">
+					<div class="container">
+						<div class="sServises__row row">
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">GIGI
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-1.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Le Mieux
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-2.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Zein Obagi
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-3.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">BB Laboratories
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-4.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">IS Clinical
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-5.png" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="sServises__col col-lg-4 col-sm-6">
+								<a class="servise-item mono" href="#">
+									<div class="servise-item__title">Ultraceuticals
+									</div>
+									<div class="servise-item__price">от 5 000 руб
+									</div><img src="img/servise-img-2-6.png" alt="" loading="lazy">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sServises-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/@splidejs/splide/js/splide.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+mixin footer()
+	+b.FOOTER.footer.section.text-white.bg-dark
+		+e.head.mono
+			.h2 У вас остались вопросы?
+			.h2
+				a.link-white(href="tel:8(800)333-0-600") 8 (800) 333-0-600
+			+e.btns
+				a.btn.btn-link(href="#").text-primary: span  Записаться
+				a.btn.btn-link(href="#").text-primary: span  Консультация
+		+e.body
+			.container
+				.row
+					.col-xl-3.col-sm-auto
+						+e.title.h5.mopo Клиника
+						ul
+							li: a(href="#") О клинике
+							li: a(href="#") Специалисты
+							li: a(href="#") Отзывы
+							li: a(href="#") Программа лольности
+							li: a(href="#") Цены
+							li: a(href="#") Контакты
+					.col
+						+e.title.h5.mopo Услуги
+						ul
+							li: a(href="#") Процедурные омоложения
+							li: a(href="#") Эпиляция
+							li: a(href="#") Коррекция фигруры
+							li: a(href="#") Косметология и уход
+							li: a(href="#") Ногтевой сервис
+							li: a(href="#") Массаж
+					.col-xl-3.col-md-auto
+						+e.title.h5.mopo Услуги
+						.h4.mopo
+							a.link-white(href="tel:8(800)333-0-600") 8 (800) 333-0-600
+						addr г. Москва, Лучжнецкая набережная 6
+						p  Ежедневно с #[time 10:00] до #[time 18:00]
+						br
+						p Мы соцмедия
+						+soc()
+				+e.footer.small
+					.row
+						.col © 2023 Le.Bar.Clinic. Все права защищены, любое использование материалов сайта без разрешения запрещено.
+						.col-xl-3.col-lg-auto 
+							a(href="#").text-white
+								+iconC("developer")
+								| Сделано RP studio

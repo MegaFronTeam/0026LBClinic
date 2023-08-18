@@ -1,0 +1,25 @@
+extends ../layout/main.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sServises/_sServises.pug
+
+block variables
+	- let  mainPage= 'catalog-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Наша продукция'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title,'Магазин')
+		+sServises10
+		+sCatalog10-2()
+	+parts('footer')
+      
+
+
+

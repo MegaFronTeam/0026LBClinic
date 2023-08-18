@@ -1,0 +1,30 @@
+mixin servise-item(i,t,p)
+	+e.col.col-lg-4.col-sm-6
+		+b.servise-item(href="#").mono
+			+e.title!= t
+			+e.price= p
+			+img(`img/servise-img-${i}.png`)
+mixin sServises(data)
+	// start sServises
+	+b.sServises#sServises&attributes(attributes)
+		.container
+			+e.row.row
+				+servise-item(`1`,`Процедуры омоложения`,`от 5 000 руб`)
+				+servise-item(`2`,`Коррекция фигуры`,`от 5 000 руб`)
+				+servise-item(`3`,`Косметология и&nbsp;уход`,`от 5 000 руб`)
+				+servise-item(`4`,`Ногтевой сервис`,`от 5 000 руб`)
+				+servise-item(`5`,`Массаж`,`от 5 000 руб`)
+				+servise-item(`6`,`Эпиляция`,`от 5 000 руб`)
+	// end sServises
+mixin sServises10(data)
+	// start sServises
+	+b.sServises#sServises&attributes(attributes)
+		.container
+			+e.row.row
+				+servise-item(`2-1`,`GIGI`,`от 5 000 руб`)
+				+servise-item(`2-2`,`Le Mieux`,`от 5 000 руб`)
+				+servise-item(`2-3`,`Zein Obagi`,`от 5 000 руб`)
+				+servise-item(`2-4`,`BB Laboratories`,`от 5 000 руб`)
+				+servise-item(`2-5`,`IS Clinical`,`от 5 000 руб`)
+				+servise-item(`2-6`,`Ultraceuticals`,`от 5 000 руб`)
+	// end sServises
