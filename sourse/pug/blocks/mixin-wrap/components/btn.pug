@@ -1,5 +1,0 @@
-mixin btn(name, typ= "a")
-	if typ=="a"
-		+e.A.btn(href="#")&attributes(attributes)= name
-	else if typ== "button" || "submit"
-		+e.BUTTON.btn(type= typ)&attributes(attributes)= name
