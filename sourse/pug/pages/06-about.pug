@@ -1,0 +1,50 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sRews/_sRews.pug
+
+block variables
+	- let  mainPage= '' 
+	- let  bg = '06-about.jpg'
+
+block title
+	- let  title= 'О клинике'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title, '', 'О нас')
+		+sContent
+			+e.wrap
+				p Мы&nbsp;предлагаем комплекс эстетических медицинских услуг, имеющих продолжительный результат, позволяющих удовлетворить актуальную потребность клиента, бережно, деликатно, безопасно, выполненных высококвалифицированной командой, с&nbsp;использованием передовых технологий Медико-эстетическое пространство&nbsp;&mdash; это клиника с&nbsp;медицинской лицензией, новейшим оборудованием, высококвалифицированным персоналом, сертифицированными препаратами.
+				p В&nbsp;клинике работают врачи с&nbsp;высшим медицинским образованием, средний медицинский персонал и&nbsp;дипломированные специалисты, которые постоянно обучаются, повышают свой профессиональный уровень и&nbsp;владеют сложными сочетанными методиками коррекции лица и&nbsp;тела.
+				p Прицельная диагностика, составление индивидуального плана лечения и&nbsp;подбор комплекса процедур для получения максимального результата&nbsp;&mdash; наш основной принцип работы.Высокие ожидания клиентов удовлетворяются в&nbsp;полном объёме благодаря качеству работы, использованию современного медицинского оборудования, комплексному подходу к&nbsp;сохранению молодости, красоты и&nbsp;здоровья.
+				p Тысячи пациентов, обратившихся к&nbsp;нам впервые, стали постоянными клиентами и&nbsp;долгожданными гостями.Будем рады видеть вас!
+			+e.slider.default-slider-js.splide
+				+control()
+				.splide__track
+					.splide__list
+						mixin item(img)
+							+e.slide.splide__slide
+								+e.img-wrap
+									.img-wrap-center
+										+img(`img/${img}`, 'bg')
+						+item('sContent-img-1.jpg')
+						+item('sContent-img-2.jpg')
+						+item('sContent-img-1.jpg')
+						+item('sContent-img-3.jpg')
+		+sAbout(false)
+		+sRews
+	+parts('footer')
+      
+
+
+

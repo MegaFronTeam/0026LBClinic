@@ -97,6 +97,32 @@ function eventHandler() {
 		} ).mount();
 	}
 
+	let sContentSliders = document.querySelectorAll('.default-slider-js');
+	if (sContentSliders.length > 0) { 
+		for (const sContentSlider of sContentSliders) {
+			new Splide(sContentSlider, {
+				// type    : 'loop',
+				rewind    : true,
+				rewindByDrag    : true,
+				perPage : 1,
+				perMove : 1,
+				gap: 56,
+				// autoplay: true,
+				// mediaQuery: 'min',
+				// breakpoints: {
+				// 	768: {
+				// 		perPage: 2,
+				// 	},
+					
+				// 	1200: {
+				// 		perPage: 3,
+				// 	},
+	
+				// }
+			} ).mount();
+		}
+	};
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

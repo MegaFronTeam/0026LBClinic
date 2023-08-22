@@ -1,0 +1,46 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sRews/_sRews.pug
+
+block variables
+	- let  mainPage= '' 
+	- let  bg = '02-service.jpg'
+
+block title
+	- let  title= 'Лицензия'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title, '', 'О нас')
+		+b.default-slider
+			.container
+				.default-slider-js.splide(style='--sliderMW:624px')
+					+control()
+					.splide__track
+						.splide__list
+							mixin item(img, imgLg)
+								+e.slide.splide__slide
+									+e.img-wrap(data-fancybox='sertificates' data-src=`img/${imgLg}`)
+										+img(`img/${img}`).res-i
+							+item('sLicense-img-1.png', 'sLicense-img-1-lg.png')
+							+item('sLicense-img-2.png', 'sLicense-img-2-lg.png')
+							+item('sLicense-img-3.png', 'sLicense-img-3-lg.png')
+			+e.container.container
+				+e.btn.btn.btn-dark(href='#'): span Записаться
+		+sAbout(false)
+		+sRews
+	+parts('footer')
+      
+
+
+

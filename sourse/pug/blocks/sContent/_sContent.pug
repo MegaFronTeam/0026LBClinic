@@ -1,9 +1,11 @@
-mixin sContent()
+mixin sContent(img)
 	// start sContent
 	+b.SECTION.sContent.section#sContent&attributes(attributes)
+		if img
+			+e.content-img
+				+img('img/sContent-img-4.jpg', 'bg')
 		.container
-			+b.section-title.text-center
-				h2 sContent
-				
-			+e.row.row
+			block
+		+e.container.container
+			+e.btn.btn.btn-dark(href='#'): span Записаться
 	// end sContent

@@ -1,12 +1,13 @@
-mixin footer()
+mixin footer(head=true)
 	+b.FOOTER.footer.section.text-white.bg-dark
-		+e.head.mono
-			.h2 У вас остались вопросы?
-			.h2
-				a.link-white(href="tel:8(800)333-0-600") 8 (800) 333-0-600
-			+e.btns
-				a.btn.btn-link(href="#").text-primary: span  Записаться
-				a.btn.btn-link(href="#").text-primary: span  Консультация
+		if head
+			+e.head.mono
+				.h2 У вас остались вопросы?
+				.h2
+					a.link-white(href="tel:8(800)333-0-600") 8 (800) 333-0-600
+				+e.btns
+					a.btn.btn-link(href="#").text-primary: span  Записаться
+					a.btn.btn-link(href="#").text-primary: span  Консультация
 		+e.body
 			.container
 				.row
