@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Цены</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+		<link href="libs/@splidejs/splide/css/splide.min.css" rel="stylesheet">
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet">
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="price-page" data-bg="03-price.jpg">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"></a></li>
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="2"></a></li>
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Услуги</span>
+										<meta itemprop="position" content="3"></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Косметология и уход</span>
+										<meta itemprop="position" content="4"></a></li>
+							</ol>
+						</nav>
+						<h1>Цены</h1>
+					</div>
+				</div>
+				<!-- start sPrice-->
+				<section class="sPrice section" id="sPrice">
+					<div class="sPrice__container container">
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<p>Терапевтическая косметология</p>
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Гигиеническая чистка лица</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Химические пилинги</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<p>Эстетическая косметология</p>
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Гигиеническая чистка лица</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Химические пилинги</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<p>Капельницы здоровья и&nbsp;красоты</p>
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Гигиеническая чистка лица</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Химические пилинги</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<p>Инъекционная косметология</p>
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Гигиеническая чистка лица</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Химические пилинги</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<p>Аппаратная косметология</p>
+									<svg class="icon icon-chevron-down ">
+										<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Гигиеническая чистка лица</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+									<div class="dd-group__wrap">
+										<div class="h4 mono">Химические пилинги</div>
+										<table>
+											<tr>
+												<td>
+													<p>Удаление милиумов (ручное) - до 10 элементов - 1 шт</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Сухая чистка / механическая чистка - 30-60 мин</p>
+												</td>
+												<td>1 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Атравматичная чистка лица GiGi (женская) - 60 мин</p>
+												</td>
+												<td>4 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Ультразвуковая чистка лица (женская) - 60 мин</p>
+												</td>
+												<td>4 000 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+											<tr>
+												<td>
+													<p>Комбинированная чистка лица (женская) - 60-90 мин</p>
+												</td>
+												<td>5 500 рублей</td>
+												<td><a href="#">Записаться </a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sPrice-->
+				<!-- start sAbout-->
+				<section class="sAbout section pt-0" id="sAbout">
+					<div class="container-xl">
+						<div class="sAbout__row row g-0">
+							<div class="sAbout__item col-md-6 mono"><img src="img/about-img-1.png" alt="">
+								<div class="sAbout__title">Оборудование
+								</div>
+								<a class="sAbout__link" href="#">Подробнее
+								</a>
+							</div>
+							<div class="sAbout__item col-md-6 mono"><img src="img/about-img-2.png" alt="">
+								<div class="sAbout__title">специалисты
+								</div>
+								<a class="sAbout__link" href="#">Подробнее
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAbout-->
+				<!-- start sRews-->
+				<section class="sRews section" id="sRews">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>Отзывы</h2>
+						</div>
+						<div class="sRews__slider sRews__slider--js splide">
+							<div class="slider-control">
+								<div class="splide__arrows splide__arrows--ltr">
+									<button class="splide__arrow splide__arrow--prev" type="button" aria-controls="splide01-track" aria-label="Previous slide">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+									<button class="splide__arrow splide__arrow--next" type="button" aria-controls="splide01-track" aria-label="Next slide">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
+								<ul class="splide__pagination"></ul>
+							</div>
+							<div class="splide__track">
+								<div class="splide__list">
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">уютная атмосфера
+													</div>
+													<p>Посетила косметолога Викторию, она сделала супер очищение и подобрали правильный уход, уже вижу результат, состоянием кожи улучшилось. Довольна сервисом в целом, встречают радушно, очень чисто в клинике, легко записаться! Ставлю 5 заслуженно</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Екатерина Ильина
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Лучшая клиника в москве
+													</div>
+													<p>Посещаю клинику второй раз. Всегда вежливый отзывчивый персонал. Очень чисто и комфортно. Врач Вера Колузакова сделала чистку быстро и пилинг лица,ответила на все мои вопросы. Очень понравилось. Рекомендую место, записалась уже на следующее посещение.</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Дарья Мальцева
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sRews__slide splide__slide">
+												<div class="sRews__item">
+													<div class="sRews__title">Прекрасное обслуживание
+													</div>
+													<p>Прекрасное обслуживание, уютная атмосфера и стильный интерьер ! Безумно благодарна Светлане за спасение моего лица от акне и постакне! Шикарный специалист, мастер своего дела, тактичная, элегантная и прятная в общении доктор ,обожаю и люблю всем сердцем и душой!</p>
+													<div class="sRews__footer">
+														<div class="sRews__img-wrap"><img src="img/rew.jpg" alt="" loading="lazy">
+														</div>
+														<div class="sRews__name">Валерия Петрова
+														</div>
+													</div>
+												</div>
+											</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sRews-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/@splidejs/splide/js/splide.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

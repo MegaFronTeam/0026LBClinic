@@ -131,3 +131,29 @@
 		max-width: rem(700);
 	}
 }
+
+.dd-group {
+	&__item {
+		&.active {
+			.icon {
+				transform: rotateX(180deg);
+			}
+		}
+	}
+	&__head {
+		@include mt;
+		cursor: pointer;
+		p {
+			margin-bottom: 0;
+		}
+		.icon {
+			@include mt;
+		}
+	}
+	&__content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}

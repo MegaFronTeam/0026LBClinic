@@ -1,0 +1,163 @@
+// start .sPrice
+.sPrice {
+	--sPT: #{rem(0)};
+	--sPB: #{rem(40)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(md) {
+		--sPB: #{rem(96)};
+	}
+	&__container {
+		@include media-breakpoint-down(md) {
+			--bs-gutter-x: 0;
+		}
+	}
+	.dd-group {
+		position: relative;
+		border-top: 1px solid $gray-600;
+		&__head {
+			display: flex;
+			align-items: center;
+			padding: 16px 20px;
+			position: relative;
+			justify-content: space-between;
+			z-index: 1;
+			border-bottom: 1px solid $gray-600;
+			background-color: transparent;
+			@include media-breakpoint-up(md) {
+				justify-content: center;
+				padding: rem(32) 0;
+			}
+			&:hover {
+				background-color: #EEE6CF;
+			}
+			p {
+				font-family: $font-family-monospace;
+				line-height: 1.25;
+				letter-spacing: -1px;	
+				text-transform: uppercase;
+				font-size: 18px;
+				max-width: 245px;
+				@include media-breakpoint-up(md) {
+					font-size: rem(32);
+					max-width: none;
+				}
+			}
+			.icon {
+				flex: 0 0 auto;
+				font-size: rem(24);
+				margin-left: rem(16);
+			}
+		}
+		&__content {
+			position: relative;
+			padding: rem(24) 0 rem(32);
+			border-bottom: 1px solid $gray-600;
+			max-width: rem(964);
+			margin-left: auto;
+			margin-right: auto;
+			@include media-breakpoint-up(md) {
+				padding: rem(40) 0 rem(52.800);
+			}
+			.h4 {
+				text-transform: uppercase;
+				margin-bottom: rem(28);
+				line-height: 1.33;
+				letter-spacing: -1px;
+				padding-left: 20px;
+				padding-right: 20px;
+				@include media-breakpoint-up(md) {
+					text-align: center;
+					margin-bottom: rem(32);
+					padding-left: 0;
+					padding-right: 0;
+				}
+				@include media-breakpoint-down(md) {
+					font-size: 16px;
+				}
+			}
+			table {
+				width: 100%;
+				tr {
+					&:nth-child(even) {
+						background-color: #F4F4F4;
+					}
+					@include media-breakpoint-down(md) {
+						position: relative;
+						display: flex;
+						flex-wrap: wrap;
+						padding: 12px 20px;
+						td {
+							&:nth-child(1) {
+								width: 100%;
+								padding-bottom: rem(16);
+							}
+							&:nth-child(3) {
+								margin-left: auto;
+							}
+						}
+					}
+					td {
+						font-family: $font-family-monospace;
+						@include media-breakpoint-up(md) {
+							padding-top: rem(16);
+							padding-bottom: rem(16);
+						}
+						@include media-breakpoint-up(md) {
+							&:nth-child(1) {
+								padding-left: rem(24);
+								padding-right: rem(24);
+							}
+							&:nth-child(2) {
+								width: rem(178);
+								padding-right: rem(24);
+							}
+							&:nth-child(3) {
+								width: rem(128);
+								padding-right: rem(24);
+							}
+						}
+						@include media-breakpoint-up(lg) {
+							&:nth-child(2) {
+								width: rem(236);
+								padding-right: rem(24);
+							}
+							&:nth-child(3) {
+								width: rem(128);
+								padding-right: rem(24);
+							}
+						}
+						p {
+							margin-bottom: 0;
+							@include media-breakpoint-down(md) {
+								max-width: 225px;
+							}
+						}
+						a {
+							text-transform: uppercase;
+							border-bottom: 1px solid currentColor;
+							font-size: rem(14);
+							&:hover {
+								border-bottom-color: transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+		&__wrap {
+			&:not(:last-child) {
+				margin-bottom: rem(24);
+				@include media-breakpoint-up(md) {
+					margin-bottom: rem(40);
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPrice

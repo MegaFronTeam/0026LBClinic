@@ -10,6 +10,7 @@
 	background-position: center 0;
 	opacity: 0;
 	opacity: 0;
+	// height: 15000px;
 	// opacity: 0.7;
 } 
 
@@ -681,4 +682,13 @@ h2{
 	color: var(--black, #494947); 
 		font-size: rem(14px); 
 		opacity: 0.5;
+}
+
+.price-page {
+	.page-head {
+		margin-bottom: rem(16);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(38.400);
+		}
+	}
 }
