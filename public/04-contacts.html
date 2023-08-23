@@ -89,6 +89,10 @@
 								});
 								myMap.geoObjects
 									.add(myPlacemark)
+								if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+									// ... отключаем перетаскивание карты
+									myMap.behaviors.disable('drag');
+								};
 							};
 							//- 	include _sContact.js
 						</script>

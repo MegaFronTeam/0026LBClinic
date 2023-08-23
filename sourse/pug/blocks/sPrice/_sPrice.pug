@@ -7,7 +7,7 @@ mixin sPrice(data)
 					tr
 						td: p!=text
 						td!= price
-						td: a(href="#") Записаться 
+						td: a(href='modal/call.html' data-type="ajax" data-fancybox) Записаться 
 				+e.wrap
 					.h4.mono Гигиеническая чистка лица
 					table
