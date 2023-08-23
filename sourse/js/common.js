@@ -96,37 +96,11 @@ function eventHandler() {
 			}
 		} ).mount();
 	}
-
-	let sContentSlider = document.querySelector('.sContent-slider-js');
-	if (sContentSlider) { 
-		new Splide(sContentSlider, {
-			// type    : 'loop',
-			rewind    : true,
-			rewindByDrag    : true,
-			perPage : 1,
-			perMove : 1,
-			gap: 56,
-			autoplay: true,
-			// mediaQuery: 'min',
-			// breakpoints: {
-			// 	768: {
-			// 		perPage: 2,
-			// 	},
-				
-			// 	1200: {
-			// 		perPage: 3,
-			// 	},
-
-			// }
-		} ).mount();
-	};
 	let slidersWithModals = document.querySelectorAll('.default-slider-js');
 	if (slidersWithModals.length > 0) { 
 		for (const slidersWithModal of slidersWithModals) {
 			new Splide(slidersWithModal, {
-				// type    : 'loop',
-				rewind    : true,
-				rewindByDrag    : true,
+				type    : 'loop',
 				perPage : 1,
 				perMove : 1,
 				gap: 56,

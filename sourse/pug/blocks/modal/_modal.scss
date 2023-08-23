@@ -186,6 +186,10 @@ a {
 	}
 }
 
+.fancybox__infobar {
+	opacity: 0 !important;
+}
+
 .is-compact .fancybox__content>.f-button.is-close-btn {
 	--f-button-border-radius: 0;
 	--f-button-color: #fff;

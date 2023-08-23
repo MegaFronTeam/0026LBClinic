@@ -5,6 +5,7 @@ class JSCCommon {
 		Fancybox.defaults = {
 			autoFocus: false,
 			placeFocusBack: false,
+			Thumbs : false
 		};
 		Fancybox.bind('[data-fancybox]', {
 			autoFocus: false,
@@ -37,6 +38,7 @@ class JSCCommon {
 				AJAX_FORBIDDEN: "Ошибка при загрузке AJAX: запрещено",
 				IFRAME_ERROR: "Ошибка загрузки iframe",
 			},
+			Thumbs : false,
 		});
 		document.querySelectorAll(".modal-close-js").forEach(el => {
 			el.addEventListener("click", () => {
