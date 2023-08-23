@@ -8,4 +8,3 @@
 8. <https://megafronteam.github.io/0026LBClinic/public/08-certificates.html>
 9. <https://megafronteam.github.io/0026LBClinic/public/09-license.html>
 10. <https://megafronteam.github.io/0026LBClinic/public/10-catalog.html>
-11. <https://megafronteam.github.io/0026LBClinic/public/00-modal.html>
