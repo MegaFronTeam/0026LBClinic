@@ -1,0 +1,33 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sRews/_sRews.pug
+include ../blocks/sSpecialists/_sSpecialists.pug
+
+block variables
+	- let  mainPage= '' 
+	- let  bg = '07-specialists.jpg'
+
+block title
+	- let  title= 'Наши специалисты'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title, '', 'Специалисты')
+		+sSpecialists
+		+sAbout(false)
+		+sRews
+	+parts('footer')
+      
+
+
+

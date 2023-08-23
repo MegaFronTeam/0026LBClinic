@@ -4,7 +4,8 @@
 4. <https://megafronteam.github.io/0026LBClinic/public/04-contacts.html>
 5. <https://megafronteam.github.io/0026LBClinic/public/05-servises.html>
 6. <https://megafronteam.github.io/0026LBClinic/public/06-about.html>
-7. <https://megafronteam.github.io/0026LBClinic/public/08-certificates.html>
-7. <https://megafronteam.github.io/0026LBClinic/public/09-license.html>
-7. <https://megafronteam.github.io/0026LBClinic/public/10-catalog.html>
-8. <https://megafronteam.github.io/0026LBClinic/public/00-modal.html>
+7. <https://megafronteam.github.io/0026LBClinic/public/07-specialists.html>
+8. <https://megafronteam.github.io/0026LBClinic/public/08-certificates.html>
+9. <https://megafronteam.github.io/0026LBClinic/public/09-license.html>
+10. <https://megafronteam.github.io/0026LBClinic/public/10-catalog.html>
+11. <https://megafronteam.github.io/0026LBClinic/public/00-modal.html>

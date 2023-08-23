@@ -1,0 +1,27 @@
+mixin sSpecialists(data)
+	// start sSpecialists
+	+b.SECTION.sSpecialists.section#sSpecialists&attributes(attributes)
+		+e.container-body.container
+			mixin item(img, title, text)
+				+e.item
+					+e.img-wrap
+						.img-wrap-center
+							+img(`img/${img}`, 'bg')
+					h4!= title 
+					p!=text
+			+e.row.row
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-1.jpg', 'Пучнина Александра Владимировна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-2.jpg', 'Алиярова Светлана Алияровна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-3.jpg', 'Колузакова Вера Андреевна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-4.jpg', 'Петренко Виктория Дмитриевна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-5.jpg', 'Тюркина Марина Владимировна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+				.col-sm-6.col-lg-4
+					+item('sSpecialists-img-1.jpg', 'Тюркина Марина Владимировна', 'Врач дерматовенеролог, косметолог, врач-эксперт корпорации "RHANA"')
+		+e.container.container
+			+e.btn.btn.btn-dark(href='#'): span Записаться
+	// end sSpecialists

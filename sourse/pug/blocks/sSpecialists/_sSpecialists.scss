@@ -1,0 +1,89 @@
+// start .sSpecialists
+.sSpecialists {
+	--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(md) {
+		--sPB: #{rem(50)};
+	}
+	@include media-breakpoint-up(lg) {
+		--sPB: #{rem(96)};
+	}
+	&__container-body {
+		@include media-breakpoint-up(xxl) {
+			--bs-gutter-x: 60px;
+		}
+	}
+	&__container {
+		@include media-breakpoint-down(md) {
+			--bs-gutter-x: 0;
+		}
+	}
+	&__row{
+		--bs-gutter-x: #{rem(40)};
+		--bs-gutter-y: #{rem(44)};
+		margin-bottom: 60px;
+		@include media-breakpoint-up(md) {
+			--bs-gutter-y: #{rem(40)};
+
+			margin-bottom: rem(64);
+		}
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(80)};
+		} 
+	}
+	&__item {
+		font-family: $font-family-monospace;
+		h4 {
+			line-height: 1.16;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+			@include media-breakpoint-up(md) {
+				margin-bottom: rem(10);
+			}
+		}
+		p {
+			font-size: rem(16);
+			margin-bottom: 0;
+			opacity: .6;
+			line-height: 1.5;
+		}
+	}
+	&__img-wrap {
+		@include block(1, 1);
+		margin-bottom: 16px;
+		@include media-breakpoint-up(md) {
+			--ratio: 400/438;
+			margin-bottom: rem(24);
+		}
+	}
+	&__btn {
+		--bs-btn-font-size: 14px;
+
+		display: block;
+		width: 100%;
+		span {
+			border-bottom: 1px solid currentColor;
+		}
+		&:hover {
+			span {
+				border-bottom-color: transparent;
+			}
+		}
+		@include media-breakpoint-down(lg) {
+			--bs-btn-padding-y: 28.5px;
+		}
+		@include media-breakpoint-up(md) {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(720);
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSpecialists
