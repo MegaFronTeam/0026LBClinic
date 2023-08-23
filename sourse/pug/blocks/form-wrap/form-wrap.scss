@@ -1,21 +1,91 @@
 .form-wrap {
-	&__input-wrap {
-		// @extend .form-group;
-		margin-bottom: rem(15);
-	}
-	&__input {
-		// @extend .form-control;
-		//  outline: 0 !important;
-		resize: none;
-	}
-	&__btn {
-		cursor: pointer;
-		margin-bottom: rem(15);
-	}
-	label {
+	label{
 		width: 100%;
 		display: block;
 	}
+
+ label {
+	 width: 100%;
+ }
+ &__input-wrap {
+	 width: 100%;
+	 position: relative;
+	 --sp-y: #{$input-padding-y};
+	 --fz: #{rem(16)};
+ }
+ &__input {
+	 padding-top: calc(var(--sp-y) * 1.5);
+	 padding-bottom: calc(var(--sp-y) * .5);
+	 padding-right: rem(16) !important;
+	 padding-left: 0;
+	 border: none;
+	 border-bottom: 1px solid rgba(5, 20, 31, 0.10);
+	 // background-color: $gray-100;
+	 &::placeholder {
+		 opacity: 0 !important	;
+		 color: transparent;
+	 }
+	 &:-webkit-autofill ,
+	 &:focus, 
+	 &:not(:placeholder-shown){
+		 &:not(textarea) {
+			 // box-shadow:  0px 3px 0px  $primary;
+		 }
+	 }
+	 &:-webkit-autofill ,
+	 &:focus, 
+	 &:not(:placeholder-shown) {
+		 box-shadow: none;
+		 // background-color: #fff;
+		 // border-color: $accent;
+		 border-bottom-color: $body-color;
+		 & ~ .form-wrap__input-title{
+		 //  color: #846951;
+			 transform: scale(0.7) translateY(-130%); 
+		 }
+	 }
+	 // &:focus {
+	 // 	background-color: #fff;
+	 // 	border-color: $accent;
+	 // }
+	 &:disabled {
+		 // background-color: $gray-400;
+		 // border-color: $gray-400;
+		 cursor: not-allowed;
+		 & ~ .custom-input-label__input-title {
+			 color: rgba(0, 0, 0, 0.48);
+		 }
+	 }
+	 &.is-invalid,
+	 &.is-valid {
+		background-image: none;
+	 }
+	}
+	.invalid-feedback {
+	 color: $danger;
+	 font-size: 11px;
+	 line-height: 1.27;
+	}
+ &__input-title {
+	 position: absolute;
+	 // padding-left: $input-padding-x;
+	 left: $input-padding-x;
+	 top: calc(var(--sp-y) + #{rem(2)}); 
+	 font-size: var(--fz);
+	 color: $input-placeholder-color; 
+	 transform-origin: left ;
+	 pointer-events: none;
+	 font-weight: 400;
+	 @include mt;
+	 max-width: calc(100% - #{$input-padding-x});
+ }
+
+ textarea {
+	 &::placeholder {
+		 opacity: 1 !important	;
+		 color: $input-placeholder-color;
+	 }
+ }
 }
 
 .parsley-error {

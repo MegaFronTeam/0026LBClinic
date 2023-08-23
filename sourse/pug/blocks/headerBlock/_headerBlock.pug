@@ -11,8 +11,8 @@ mixin headerBlock()
 								+e.label.mono Акция
 								.h1 Эндосфера терапия &mdash;&nbsp;Скидка&nbsp;15%
 								+e.btns
-									+e.btn.btn.btn-dark(href="#"): span Записаться
-									+e.btn.btn.btn-link(href="#"): span Подробнее
+									+e.btn.btn.btn-dark(href='modal/call.html' data-type="ajax" data-fancybox): span Записаться
+									+e.btn.btn.btn-link(href='modal/product.html' data-type="ajax" data-fancybox): span Подробнее
 								+e.img-wrap
 									+img('img/head-img.png').end
 	// end headerBlock

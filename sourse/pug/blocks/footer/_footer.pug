@@ -6,8 +6,8 @@ mixin footer(head=true)
 				.h2
 					a.link-white(href="tel:8(800)333-0-600") 8 (800) 333-0-600
 				+e.btns
-					a.btn.btn-link(href="#").text-primary: span  Записаться
-					a.btn.btn-link(href="#").text-primary: span  Консультация
+					a.btn.btn-link(href='modal/call.html' data-type="ajax" data-fancybox).text-primary: span  Записаться
+					a.btn.btn-link(href='modal/call.html' data-type="ajax" data-fancybox).text-primary: span  Консультация
 		+e.body
 			.container
 				.row

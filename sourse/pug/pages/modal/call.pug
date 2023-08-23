@@ -2,7 +2,17 @@ include ../../layout/include.pug
 
 +b.modal-win
 	+form-wrap 
-		+e.title Нужна помощь в&nbsp;выборе ASIC-майнера?
-		p.after-headline Оставьте свой телефон и&nbsp;мы&nbsp;перезвоним в&nbsp;ближайшее время
-		+input("Телефон",'tel')(required)  
-		+e.BUTTON.btn.btn(type="submit"  ).btn-primary.w-100 Заказать звонок
+		+e.title Консультация
+		p.after-headline Оставьте заявку на бесплатную консультацию
+		+e.row.row
+			.col-md-6
+				+input("Фамилия",'text')
+			.col-md-6
+				+input("Имя",'text')
+			.col-md-6
+				+input("Контактный телефон",'tel')
+			.col-md-6
+				+input("E-mail",'email').is-invalid
+					.invalid-feedback Ошибка валидации
+		+e.BUTTON.btn.btn(type="submit"  ).btn-dark.w-100: span Отправить
+		+policy
