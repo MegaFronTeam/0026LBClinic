@@ -3,7 +3,44 @@ mixin sContact()
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sContact
-				
-			+e.row.row
+				h4 г. Москва, Лучжнецкая набережная 6 Ежедневно с&nbsp;10:00 до&nbsp;18:00
+				+e.tel(href="tel:88003330600") 8 (800) 333-0-600
+				+e.mail(href="mailto:info@lebarclinic.com") info@lebarclinic.com
+		+e.map
+			#map
+			script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c')
+			script.
+				var myMap;
+
+				// Дождёмся загрузки API и готовности DOM.
+				ymaps.ready(init);
+
+				function init () {
+					// Создание экземпляра карты и его привязка к контейнеру с
+					// заданным id ("map").
+					myMap = new ymaps.Map('map', {
+						// При инициализации карты обязательно нужно указать
+						// её центр и коэффициент масштабирования.
+						center:[55.71513590910794,37.55887909306758], // Москва
+						zoom: 15
+					}),
+					myPlacemark = new ymaps.Placemark([55.71513590910794,37.55887909306758], {
+						//- hintContent: 'Собственный значок метки',
+						//- balloonContent: 'Это красивая метка'
+					}, {
+						// Опции.
+						// Необходимо указать данный тип макета.
+						iconLayout: 'default#image',
+						// Своё изображение иконки метки.
+						iconImageHref: 'img/map-pin.png',
+						// Размеры метки.
+						iconImageSize: [48, 77],
+						// Смещение левого верхнего угла иконки относительно
+						// её "ножки" (точки привязки).
+						iconImageOffset: [-24, -70],
+					});
+					myMap.geoObjects
+						.add(myPlacemark)
+				};
+				//- 	include _sContact.js
 	// end sContact

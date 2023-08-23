@@ -1,0 +1,32 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sPrice/_sPrice.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sRews/_sRews.pug
+
+block variables
+	- let  mainPage= 'price-page' 
+	- let  bg = '03-price.jpg'
+
+block title
+	- let  title= 'Цены'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title, '', 'Услуги', 'Косметология и уход')
+		+sPrice
+		+sAbout(false)
+		+sRews
+	+parts('footer')
+      
+
+
+

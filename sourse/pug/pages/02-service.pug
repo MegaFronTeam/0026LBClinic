@@ -1,0 +1,71 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sRews/_sRews.pug
+
+block variables
+	- let  mainPage= '' 
+	- let  bg = '02-service.jpg'
+
+block title
+	- let  title= 'Процедуры омоложения'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head(title, 'В медико-эстетическом пространстве', 'Услуги', 'Косметология и уход')
+		+sContent(true)
+			+e.wrap
+				h4 Описание процедуры
+				p Гигиеническая чистка лица и&nbsp;тела&nbsp;&mdash; одна из&nbsp;самых популярных косметологических процедур и&nbsp;заключается в&nbsp;глубоком механическом и/или аппаратном очищении кожи от&nbsp;открытых и&nbsp;закрытых комедонов, милиумов, ороговевших клеток, токсинов и&nbsp;сальных пробок.
+				p Процедура не&nbsp;имеет возрастных ограничений и&nbsp;призвана решать задачи не&nbsp;только с&nbsp;внешними эстетическими недостатками кожи, но&nbsp;также имеет лечебно-профилактические цели.
+				p Регулярная профессиональная чистка лица и&nbsp;тела&nbsp;&mdash; базовая процедура, необходимая всем для гигиены. Периодичность проведения зависит от&nbsp;состояния кожи. В&nbsp;некоторых случаях для эффективного лечения косметологом могут быть назначены анализы, медикаментозное лечение, скорректирован домашний уход и&nbsp;назначена специальная диета.
+			+e.slider--indent.default-slider-js.splide
+				+control()
+				.splide__track
+					.splide__list
+						mixin item(img)
+							+e.slide.splide__slide
+								+e.img-wrap
+									.img-wrap-center
+										+img(`img/${img}`, 'bg')
+						+e.slide.splide__slide
+							+e.img-wrap(data-fancybox data-src='https://www.youtube.com/watch?v=wUxiE_TVzFQ')
+								.img-wrap-center
+									picture
+										source(media="(min-width: 576px)", srcset="img/sContent-img-5.jpg")
+										img(src=`img/sContent-img-5-sm.jpg`).object-fit-js
+								+e.play-btn
+						+item('sContent-img-6.jpg')
+						+item('sContent-img-7.jpg')
+						+item('sContent-img-7.jpg')
+			+e.wrap
+				h4 Показания
+				ul
+					li Усиленное выделение сальных желез;
+					li Угревая сыпь на&nbsp;стадии лечения;
+					li Наличие закрытых/открытых комедонов;
+					li Расширенные поры;
+					li Снижение тонуса и&nbsp;ухудшение тургора кожного покрова
+				h4 ПротивоПоказания
+				ul.wrong
+					li Герпес в&nbsp;стадии обострения;
+					li Гнойничковые заболевания кожи;
+					li Сахарный диабет в&nbsp;стадии обострения;
+					li Экзема в&nbsp;зонах проведения процедуры;
+					li Эпилепсия
+		+sAbout(false)
+		+sRews
+	+parts('footer')
+      
+
+
+

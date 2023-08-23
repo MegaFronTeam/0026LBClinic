@@ -4,7 +4,7 @@ include ../blocks/sServises/_sServises.pug
 
 block variables
 	- let  mainPage= 'catalog-page' 
-	- let  bg= null
+	- let  bg= '10-catalog.jpg'
 
 block title
 	- let  title= 'Наша продукция'
@@ -15,7 +15,7 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+page-head(title,'Магазин')
+		+page-head(title, '', 'Магазин')
 		+sServises10
 		+sCatalog10-2()
 	+parts('footer')
