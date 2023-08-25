@@ -23,10 +23,11 @@ mixin top-nav()
 		.container
 			+e.row.row
 				.col.ps-0.d-none.d-lg-block
-					ul
-						li: a(href="#")  Услуги
-						li: a(href="#")  Цены
-						li: a(href="#")  Клиника
+					+e.nav
+						ul
+							li: a(href="#")  Услуги
+							li: a(href="#")  Цены
+							li: a(href="#")  Клиника
 				+e.logo-col.col
 					a(href="#") 
 						img(src="img/logo.svg", alt="")
@@ -38,10 +39,39 @@ mixin top-nav()
 					+e.btn.btn.btn-dark(href='modal/call.html' data-type="ajax" data-fancybox) Записаться
 				.col-auto.pe-0.order-xl-first
 					+menu-toggle()
+				.menu-mobile.menu-mobile--js
+					.menu-mobile__inner
+						.text-center.d-md-none
+							+e.link(href="tel:8800333-0-600") 8 800 333-0-600
+							+e.addr г. Москва, Лучжнецкая набережная 6 <br> Ежедневно с&nbsp;10:00 до&nbsp;18:00
+						+e.menu
+							ul
+								li
+									a(href="#") Клиника
+									ul
+										li: a.active(href="#") О клинике
+										li: a(href="#") Специалисты
+										li: a(href="#") Отзывы
+										li: a(href="#") Программа лольности
+										li: a(href="#") Цены
+										li: a(href="#") Контакты
+							ul
+								li
+									a(href="#") Услуги
+
+									ul
+										li: a(href="#") Процедурные омоложения
+										li: a(href="#") Эпиляция
+										li: a(href="#") Коррекция фигруры
+										li: a(href="#") Косметология и уход
+										li: a(href="#") Ногтевой сервис
+										li: a(href="#") Массаж
+							ul
+								li
+									a(href="#") Наша продукция
+						+e.footer
+							p Мы соцмедия
+							+soc()
 				//- .col.order-lg-0.order-last
-				//- 	.menu-mobile.menu-mobile--js
-				//- 		.menu-mobile__inner
-				//- 			//- +menu-toggle()
-				//- 			+mnu()
 					
 	// end top-nav

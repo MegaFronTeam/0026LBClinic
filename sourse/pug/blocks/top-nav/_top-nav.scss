@@ -3,8 +3,8 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	border-bottom: 1px solid $secondary;
-	position: relative;
-	z-index: 3;
+	z-index: 1000;
+	position: relative; 
 	.container{
 		@include media-breakpoint-up(xl){
 			padding-left: 0;
@@ -62,26 +62,29 @@
 		position: relative;
 		z-index: 2;
 	}
-	ul{
-		display: flex;
-		margin-bottom: 0;
-		a{
+	&__nav {
+		ul{
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: var(--size);
-			padding: 10px var(--bs-gutter-x);
-			text-transform: uppercase;
-			font-size: 14px;
-			
-			&:hover{
-				color: #fff;
-				background-color: $primary;
+			margin-bottom: 0;
+			a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: var(--size);
+				padding: 10px var(--bs-gutter-x);
+				text-transform: uppercase;
+				font-size: 14px;
+				
+				&:hover{
+					color: #fff;
+					background-color: $primary;
+				}
 			}
 		}
-	}
-	li{
-		list-style: none;
+		li{
+			list-style: none;
+		}
+	
 	}
 	&__link{
 		font-size: 14px;
